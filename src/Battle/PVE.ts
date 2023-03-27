@@ -14,10 +14,6 @@ export default class PVE extends Battle {
         e.attack(this.playerA);
       }
     });
-    // return this.playerA.lifePoints === -1 ? -1 : 1;
-    if (this.playerA.lifePoints !== -1) {
-      return 1;
-    } 
-    return -1;
+    return this.playerA.lifePoints === -1 ? -1 : 1;
   }
 }
